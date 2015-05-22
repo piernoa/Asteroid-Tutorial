@@ -1,0 +1,12 @@
+ <ion-view view-title="Users">
+          <ion-nav-buttons side="right">
+            <button class="button button-icon icon ion-loop" ng-click="refreshUsers()"></button>
+          </ion-nav-buttons>
+          <ion-content>
+            <ion-list>
+              <ion-item ng-repeat="user in users">
+                {{user._id}}
+              </ion-item>
+            </ion-list>
+          </ion-content>
+        </ion-view>
